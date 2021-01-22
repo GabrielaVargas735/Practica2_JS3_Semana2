@@ -23,23 +23,25 @@ console.log(title.innerText);
   Selecciona y loguea el primer y el ultimo elemento
   de la lista
 */
-const first = document.querySelectorAll('li').firstChild;
-console.log(first);
+let first = document.querySelector('li:first-child');
+console.log(first.innerHTML);
+let last = document.querySelector('li:last-child');
+console.log(last.innerHTML);
 /*
   EJERCICIO C: --------------------------------------------
   
   Selecciona y loguea el input de tipo "email" del
   formulario
 */
-const email = document.querySelector('form');
+const email = document.querySelector('label:nth-of-type(3)');
 console.log(email);
 /*
   EJERCICIO D: --------------------------------------------
   
   Selecciona y loguea la fila de la tabla que tiene "JavaScript"
 */
-const table = document.querySelector('tr:nth-child(3) td');
-console.log(table);
+const table = document.querySelectorAll('tr:nth-child(3) td');
+console.log(table.length);
 /*
   EJERCICIO E: --------------------------------------------
   
