@@ -48,7 +48,7 @@ console.log(table.length);
   Selecciona y loguea la celda que dice CSS
 */
 const table2 = document.querySelector('tr:nth-child(4) td');
-console.log(table2);
+console.log(table2.innerText);
 /*
   EJERCICIO F: --------------------------------------------
   
